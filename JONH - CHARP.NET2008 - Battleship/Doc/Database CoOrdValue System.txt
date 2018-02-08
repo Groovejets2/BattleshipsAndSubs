@@ -1,0 +1,10 @@
+BattleShips Cell Values:
+
+	Value:		Graphical Meaning:
+	O		Grid cell is blank (No local or opposition ship or hit component)
+	X		Grid cell has been hit by the opposition player but contains no local or opposition ship piece
+	S		Grid cell contains a local player ship piece
+	H		Grid cell contains a local player ship piece and it has been hit by the oposition player
+	E		Grid cell has been hit by the local player and it does contain the opposition player ship piece
+	M		Grid cell has been hit by the local player and it does contain the opposition player ship piece and local player ship piece
+

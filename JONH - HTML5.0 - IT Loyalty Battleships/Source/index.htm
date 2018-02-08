@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  <head>
+    <title>IT LOYALTY BATTLESHIPS
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/battleships.js"></script>
+  </head>
+  <body>
+
+<table border=0 width="100%" textalign="center">
+ <tr>
+	<td colspan="2" align="center" class='titlecell'>
+		IT TEST
+	</td>
+</tr>
+ <tr width="100%">
+   <td id="PlayerArea" class='msgblinkoff' align="center" valign="middle" width="50%">
+
+
+
+		<table border=1 id="PlayerGrid" class="playergrid">
+		  <tr>
+			<td colspan="11"class="titlecell" width="100%">PLAYER GRID</td>
+		  </tr>
+		  <colgroup span="11"></colgroup>
+		  <tr id="COL">
+			<td name="none" class="cellaxis"></td> 
+			<td name="COL1" class="cellaxis">1</td> 
+			<td name="COL2" class="cellaxis">2</td> 
+			<td name="COL3" class="cellaxis">3</td> 
+			<td name="COL4" class="cellaxis">4</td> 
+			<td name="COL5" class="cellaxis">5</td> 
+			<td name="COL6" class="cellaxis">6</td> 
+			<td name="COL7" class="cellaxis">7</td> 
+			<td name="COL8" class="cellaxis">8</td> 
+			<td name="COL9" class="cellaxis">9</td> 
+			<td name="COL10" class="cellaxis">10</td> 
+		  </tr>
+		  <tr id="ROW1">
+		  	<td name="ROW1LABEL" id="ROW1LABEL" class="cellaxis">A</td>
+			<td name="A1"  id="A1"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="A2"  id="A2"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="A3"  id="A3"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="A4"  id="A4"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="A5"  id="A5"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="A6"  id="A6"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="A7"  id="A7"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="A8"  id="A8"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="A9"  id="A9"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="A10" id="A10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="ROW2">
+			<td name="ROW2LABEL" class="cellaxis">B</td>
+			<td name="B1"  id="B1"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="B2"  id="B2"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="B3"  id="B3"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="B4"  id="B4"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="B5"  id="B5"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="B6"  id="B6"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="B7"  id="B7"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="B8"  id="B8"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="B9"  id="B9"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="B10" id="B10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="ROW3">
+			<td name="ROW3LABEL" class="cellaxis">C</td>
+			<td name="C1"  id="C1"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="C2"  id="C2"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="C3"  id="C3"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="C4"  id="C4"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="C5"  id="C5"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="C6"  id="C6"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="C7"  id="C7"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="C8"  id="C8"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="C9"  id="C9"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="C10" id="C10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="ROW4">
+			<td name="ROW4LABEL" class="cellaxis">D</td>
+			<td name="D1"  id="D1"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="D2"  id="D2"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="D3"  id="D3"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="D4"  id="D4"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="D5"  id="D5"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="D6"  id="D6"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="D7"  id="D7"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="D8"  id="D8"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="D9"  id="D9"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="D10" id="D10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="ROW5">
+			<td name="ROW5LABEL" class="cellaxis">E</td>
+			<td name="E1"  id="E1"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="E2"  id="E2"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="E3"  id="E3"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="E4"  id="E4"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="E5"  id="E5"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="E6"  id="E6"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="E7"  id="E7"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="E8"  id="E8"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="E9"  id="E9"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="E10" id="E10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="ROW6">
+			<td name="ROW6LABEL" class="cellaxis">F</td>
+			<td name="F1"  id="F1"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="F2"  id="F2"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="F3"  id="F3"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="F4"  id="F4"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="F5"  id="F5"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="F6"  id="F6"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="F7"  id="F7"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="F8"  id="F8"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="F9"  id="F9"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="F10" id="F10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="ROW7">
+			<td name="ROW7LABEL" class="cellaxis">G</td>
+			<td name="G1"  id="G1"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="G2"  id="G2"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="G3"  id="G3"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="G4"  id="G4"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="G5"  id="G5"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="G6"  id="G6"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="G7"  id="G7"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="G8"  id="G8"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="G9"  id="G9"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="G10" id="G10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="ROW8">
+			<td name="ROW8LABEL" class="cellaxis">H</td>
+			<td name="H1"  id="H1"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="H2"  id="H2"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="H3"  id="H3"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="H4"  id="H4"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="H5"  id="H5"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="H6"  id="H6"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="H7"  id="H7"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="H8"  id="H8"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="H9"  id="H9"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="H10" id="H10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="ROW9">
+			<td name="ROW9LABEL" class="cellaxis">I</td>
+			<td name="I1"  id="I1"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="I2"  id="I2"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="I3"  id="I3"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="I4"  id="I4"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="I5"  id="I5"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="I6"  id="I6"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="I7"  id="I7"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="I8"  id="I8"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="I9"  id="I9"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="I10" id="I10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="ROW10">
+			<td name="ROW10LABEL" class="cellaxis">J</td>
+			<td name="J1"  id="J1"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="J2"  id="J2"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="J3"  id="J3"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="J4"  id="J4"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="J5"  id="J5"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="J6"  id="J6"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="J7"  id="J7"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="J8"  id="J8"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="J9"  id="J9"  class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="J10" id="J10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		</table>
+
+
+   </td>
+   <td id="OpponentArea" class='msgblinkoff' align="center" valign="middle" width="50%">
+
+
+		<table border=1 id="OpponentGrid" class="bingotable">
+		  <tr>
+			<td colspan="11"class="titlecell" width="100%">OPPONENT GRID</td>
+		  </tr>
+		  <colgroup span="11"></colgroup>
+		  <tr id="xaxis">
+			<td name="none" class="cellaxis"></td> 
+			<td name="c1" class="cellaxis">1</td> 
+			<td name="c2" class="cellaxis">2</td> 
+			<td name="c3" class="cellaxis">3</td> 
+			<td name="c4" class="cellaxis">4</td> 
+			<td name="c5" class="cellaxis">5</td> 
+			<td name="c6" class="cellaxis">6</td> 
+			<td name="c7" class="cellaxis">7</td> 
+			<td name="c8" class="cellaxis">8</td> 
+			<td name="c9" class="cellaxis">9</td> 
+			<td name="c10" class="cellaxis">10</td> 
+		  </tr>
+		  <tr id="row1">
+		  	<td name="yaxis" class="cellaxis">A</td>
+			<td name="c1" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c2" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c3" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c4" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c5" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c6" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c7" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c8" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c9" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="row2">
+			<td name="yaxis" class="cellaxis">B</td>
+			<td name="c1" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c2" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c3" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c4" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c5" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c6" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c7" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c8" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c9" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="row3">
+			<td name="yaxis" class="cellaxis">C</td>
+			<td name="c1" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c2" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c3" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c4" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c5" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c6" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c7" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c8" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c9" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="row4">
+			<td name="yaxis" class="cellaxis">D</td>
+			<td name="c1" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c2" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c3" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c4" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c5" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c6" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c7" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c8" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c9" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="row5">
+			<td name="yaxis" class="cellaxis">E</td>
+			<td name="c1" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c2" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c3" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c4" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c5" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c6" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c7" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c8" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c9" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="row6">
+			<td name="yaxis" class="cellaxis">F</td>
+			<td name="c1" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c2" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c3" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c4" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c5" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c6" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c7" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c8" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c9" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="row7">
+			<td name="yaxis" class="cellaxis">G</td>
+			<td name="c1" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c2" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c3" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c4" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c5" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c6" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c7" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c8" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c9" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="row8">
+			<td name="yaxis" class="cellaxis">H</td>
+			<td name="c1" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c2" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c3" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c4" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c5" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c6" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c7" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c8" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c9" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="row9">
+			<td name="yaxis" class="cellaxis">I</td>
+			<td name="c1" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c2" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c3" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c4" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c5" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c6" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c7" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c8" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c9" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		  <tr id="row10">
+			<td name="yaxis" class="cellaxis">J</td>
+			<td name="c1" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c2" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c3" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c4" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c5" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c6" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c7" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c8" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c9" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+			<td name="c10" class="celloff" onClick="CellClick(this);" onMouseOver="CellOn(this);" onMouseOut="CellOff(this);"> </td> 
+		  </tr>
+		</table>
+
+
+   </td>
+ </tr>
+ <tr>
+	<td colspan="2" align="center">
+		<input type="button" name="reset" value="Reset" onclick="ResetCells();"></input>
+	</td>
+</tr>
+ </table>
+
+  </body>
+</html>
