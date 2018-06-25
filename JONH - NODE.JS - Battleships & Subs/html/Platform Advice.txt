@@ -1,0 +1,9 @@
+react native:
+-NativeBase 
+-Firebase (database)
+-Expo - Push Ntofications, Camera Aceess Photo Upload .... 
+-MaterialUI
+
+react: 
+MaterialUI (Google)
+React-Bootstrap (prebuilt componets)
